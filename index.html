@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <title>student registration</title>
+</head>
+
+<body>
+  <H1>Personal Info section</H1>
+    <form>
+      First name:
+      <input type="text" name="firstname" required>
+      Last name:
+      <input type="text" name="lastname" required><br>
+
+  <p><label>Age:</label>
+          <select id = "age">
+            <option value = "1">01</option>
+            <option value = "2">02</option>
+            <option value = "3">03</option>
+            <option value = "4">04</option>
+            <option value = "5">05</option>
+            <option value = "6">06</option>
+            <option value = "7">07</option>
+            <option value = "8">08</option>
+            <option value = "9">09</option>
+            <option value = "10">10</option>
+            <option value = "12">11</option>
+            <option value = "13">12</option>
+            <option value = "14">13</option>
+            <option value = "15">14</option>
+            <option value = "15">15</option>
+            <option value = "16">16</option>
+            <option value = "17">17</option>
+            <option value = "18">18</option>
+            <option value = "19">19</option>
+            <option value = "20">20</option>
+            <option value = "21">21</option>
+            <option value = "22">22</option>
+            <option value = "23">23</option>
+            <option value = "24">24</option>
+            <option value = "25">25</option>
+            <option value = "26">26</option>
+            <option value = "27">27</option>
+            <option value = "28">28</option>
+            <option value = "29">29</option>
+         </select>
+
+   <p><label for="Date of Birth">Date of Birth:</label>
+     <input type="date" id="date of birth" name="date of birth"
+               value="2019-03-06"
+               min="1990-01-01" max="2019-12-31"></p>
+  <p>Sex:<br>
+      <input type="radio" name="gender" value="male"> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br></p>
+<label for="email_address">Email address:</label>
+<input type="email" placeholder="you@somewhere.com" name="email_address" id="email_address" required>
+<br>
+
+<p><label for="phone">Phone number:</label>
+<form>
+<input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"</p>
+       </form><br>
+     </p>
+                 <p>
+         <label for="bio">Short Bio:</label><br><textarea Name="content" ROWS="10" COLS="80"></textarea>
+       </p>
+       <div class="slidecontainer">
+       <input type="range" min="1" max="100" value="100" class="slider" id="myRange">
+       </div>
+
+
+</form>
+<H1>Application Info section</H1>
+
+<label for="graduated">Graduated_in:</label>
+      <select name="graduation_year">
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019" selected>2019</option>
+      </select>
+      <input type="submit">
+
+      <p>
+        <label for="pls">Choose your prefered Language</label>
+        <input list="pls" name="pls">
+        <datalist id="pls">
+
+          <option value="C#">
+          <option value="JavaScript">
+        <option value="Python">
+          <option value="C++">
+              <option value="Java">
+        </datalist>
+      </P>
+      <p>
+        <label for="academic_doc">Upload your recent academic document:</label>
+
+        <input type="file" id="academic_doc" name="academic_doc" accept="image/png, image/jpeg">
+      </p>
+
+    </div>
+    <hr>
+    <div class="submision">
+      <h2>You are ready to submit your data</h2>
+      <p>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+      </p>
+
+    </div>
+
+</body>
+
+</html>
